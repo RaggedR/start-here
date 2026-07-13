@@ -107,7 +107,7 @@ GPU simulations, generative art, physics, and interactive math visualizations.
 | [reaction-diffusion-screensaver](https://github.com/RaggedR/reaction-diffusion-screensaver) | Music-reactive Gray-Scott reaction-diffusion screensaver — maze patterns with beat-triggered ripples. |
 | [reaction-diffusion-playground](https://github.com/RaggedR/reaction-diffusion-playground) | Interactive Gray-Scott reaction-diffusion simulator (Three.js, MIDI-controllable). |
 | [smoke-flow](https://github.com/RaggedR/smoke-flow) | Real-time GPU smoke: laminar-to-turbulent transition via Navier-Stokes. |
-| [dmt](https://github.com/RaggedR/dmt) | Animated recursive geometry — Zentangle Paradox spirals and DMT tunnel vortices from pure straight lines. |
+| [dmt](https://github.com/RaggedR/dmt) | Animated recursive geometry — Zentangle Paradox spirals and DMT tunnel vortices from pure straight lines. *(Merged into reaction-diffusion-screensaver)* |
 | [knots](https://github.com/RaggedR/knots) | 3D cord physics simulation with Verlet integration and mass-spring model for knot visualization. |
 | [belt-trick](https://github.com/RaggedR/belt-trick) | Interactive 3D Dirac belt trick — why spinors need 720° (SU(2) contraction in Three.js). |
 | [burgers](https://github.com/RaggedR/burgers) | 2D Burgers equation on GPU with GA evolving shock parameters. |
