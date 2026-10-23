@@ -75,6 +75,12 @@ cryptography, then trustworthy ML, then autonomous-but-verified reasoning, then 
   by what each piece *demonstrates* for a security reader: cryptography and formal
   methods first, mathematical depth as the foundation.
 
+And two program narratives — how the pieces fit together, not just what they are:
+- **[The formal-verification program →](verification.md)** — thesis → machine-checked
+  theorem (`lean-sabidussi`) → a local Mathlib development.
+- **[The container-theory program →](containers.md)** — a Lean-verified comonad spine
+  (`macbeth-seed`, `social-network`) → a dozen applied instances.
+
 ---
 
 ## Category directory
@@ -82,7 +88,7 @@ cryptography, then trustworthy ML, then autonomous-but-verified reasoning, then 
 Every public repository, grouped, strongest/most-relevant first. Claims are stated to
 match what the code actually shows.
 
-### 1 · Formal verification & machine-checked proof — see the [Lean index](lean.md)
+### 1 · Formal verification & machine-checked proof — see the [Lean index](lean.md) · [program narrative](verification.md)
 | Repo | What it is |
 |------|------------|
 | [lean-sabidussi](https://github.com/RaggedR/lean-sabidussi) | PhD theorem (symmetric graphs ⟷ Hecke algebras), Lean 4, 0 `sorry`, axiom-checked. |
@@ -128,7 +134,7 @@ match what the code actually shows.
 | [torah-embed](https://github.com/RaggedR/torah-embed) | Talmud retrieval from a centuries-old hand-curated relevance apparatus (Sefaria data, CC-BY-NC). |
 | [embeddings](https://github.com/RaggedR/embeddings) | Knowledge-graph-guided fine-tuning of an embedding model (see §3). |
 
-### 6 · Compositional systems modeling (directed containers)
+### 6 · Compositional systems modeling (directed containers) — see the [container-theory program](containers.md)
 | Repo | What it is |
 |------|------------|
 | [macbeth-seed](https://github.com/RaggedR/macbeth-seed) | The Lean-verified container spine (proven/stated split — see the Lean index). |
