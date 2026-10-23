@@ -4,6 +4,18 @@ Mathematician, software engineer, and AI researcher. These projects span categor
 
 ---
 
+## The mathematical program — how the pieces connect
+
+Much of the mathematics below is **not** a scatter of separate projects but one connected research program in **algebraic combinatorics and representation theory**, increasingly **machine-checked in Lean 4**:
+
+- **Symmetric graphs ⟷ Hecke algebras.** My thesis studies vertex- and arc-transitive graphs through the group acting on them. Every such graph is a coset graph `Sab(G, H, D)` (Sabidussi), whose connection set `D` is a union of H–H **double cosets** — precisely a basis of the **Hecke algebra** ℋ(G,H) = End_G(ℂ[G/H]), my doctoral area. Lorimer's theorem (arc-transitive ⟺ `D` a *single* double coset `HaH`) is the smallest non-trivial Hecke case. → [lean-sabidussi](https://github.com/RaggedR/lean-sabidussi) (formalized, CI-certified), [symmetric-graphs](https://github.com/RaggedR/symmetric-graphs) (per-graph Hecke algebras ℋ(Aut Γ, Stab v) + example catalogue), [thesis](https://github.com/RaggedR/thesis).
+- **q-series, symmetric functions & positivity.** The same algebra one q-deformation over: symmetric functions and Macdonald polynomials ([haskell](https://github.com/RaggedR/haskell), [puzzles](https://github.com/RaggedR/puzzles)), cylindric partitions and Warnaar's positivity program ([warnaar-glue](https://github.com/RaggedR/warnaar-glue), [warnaar-loop-experiment](https://github.com/RaggedR/warnaar-loop-experiment)), with the **umbral / finite-operator calculus** as the Hopf-algebraic backbone ([lean-hopf-algebras](https://github.com/RaggedR/lean-hopf-algebras)). Double cosets, orbital algebras, and q-deformed symmetric functions are facets of the same representation-theoretic machinery.
+- **Formalization as the method.** The graph theorems and the umbral/Hopf structures are written in **Lean 4** and certified in CI — claims a computer verifies, not claims you take on trust.
+
+*A parallel strand applies **category theory** to the compositional modelling of real systems — directed containers with a Lean-verified spine ([macbeth-seed](https://github.com/RaggedR/macbeth-seed), [catgraph](https://github.com/RaggedR/catgraph)) and applied instances. Distinct in subject, same habit of mind: find the structure, then make it formal.*
+
+---
+
 ## Tier 1 — Original Research & Novel Results
 
 Projects with genuine intellectual contributions: new theorems, published papers, or surprising empirical findings.
@@ -51,9 +63,9 @@ Pure math, Lean 4 formalizations, and computational tools for mathematical resea
 | [lean-hopf-algebras](https://github.com/RaggedR/lean-hopf-algebras) | Hopf algebras and the umbral calculus formalized in Lean 4 / Mathlib. |
 | [lean-sabidussi](https://github.com/RaggedR/lean-sabidussi) | Sabidussi's representation theorem for vertex-transitive graphs in Lean 4. |
 | [warnaar-glue](https://github.com/RaggedR/warnaar-glue) | Lean 4 formalization: glue connecting arguments for Warnaar's A₂ cylindric partition positivity conjectures. |
-| [mathlib4](https://github.com/RaggedR/mathlib4) | Mathlib fork with PRs: CSS quantum codes, primitivity results, graph families. |
+| [mathlib4](https://github.com/RaggedR/mathlib4) | Personal Mathlib fork. The Mathlib-structured formalization (Hopf/umbral, Sabidussi graphs, named-graph & CSS-code examples) is maintained as a **local** Mathlib development — not submitted upstream. |
 | [catgraph](https://github.com/RaggedR/catgraph) | Cospans, hypergraph rewriting, Petri nets, Frobenius algebras, wiring diagrams, and lattice gauge theory — applied category theory in Rust. |
-| [symmetric-graphs](https://github.com/RaggedR/symmetric-graphs) | Quotient-driven layouts for symmetric graphs using automorphism group orbits. |
+| [symmetric-graphs](https://github.com/RaggedR/symmetric-graphs) | Symmetric-graph theory: quotient-driven layouts from automorphism-group orbits, plus per-graph **Hecke algebras** ℋ(Aut Γ, Stab v) and an example catalogue — the computational companion to the formalized [lean-sabidussi](https://github.com/RaggedR/lean-sabidussi) (see *The mathematical program* above). |
 | [graph-recommender](https://github.com/RaggedR/graph-recommender) | Proof strategy discovery engine: weighted path scoring on math knowledge graphs (Rust). |
 | [puzzles](https://github.com/RaggedR/puzzles) | KTW puzzle triangles, Littlewood-Richardson coefficients, and Hopf algebra coproduct via transfer operators. |
 | [stomachion](https://github.com/RaggedR/stomachion) | Archimedes' Stomachion puzzle — interactive solver with Dancing Links exact cover. |
