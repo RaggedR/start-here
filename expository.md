@@ -98,8 +98,8 @@ the paragraph above is the map of how they fit together as research.
   [`rsk-manifold-microscope`](https://github.com/RaggedR/rsk-manifold-microscope).
 - **Mechanistic interpretability of small transformers** —
   [`octopus-streams`](https://github.com/RaggedR/octopus-streams),
-  [`rsk-transformer`](https://github.com/RaggedR/rsk-transformer) (100% exact; ablation
-  isolates the responsible layer).
+  [`rsk-transformer`](https://github.com/RaggedR/rsk-transformer) (100% exact at n=10,
+  99.99% at n=15; probing whether it learned a parallel growth-diagram rule).
 - **Trajectory Tracing for Epistemically Honest AI Agents** —
   [`trajectory-tracing`](https://github.com/RaggedR/trajectory-tracing); **per-agent
   trust descriptors** — [`trust-boundaries`](https://github.com/RaggedR/trust-boundaries).
@@ -114,7 +114,7 @@ the paragraph above is the map of how they fit together as research.
   under ontologies and automated reasoning.
 - **Knowledge-Graph-Guided Fine-Tuning of Embedding Models** —
   [`embeddings`](https://github.com/RaggedR/embeddings). A domain retrieval model that
-  beat OpenAI on mathematical search (MRR 0.816 vs 0.461).
+  beat OpenAI's `text-embedding-3-small` on mathematical search (MRR 0.816 vs 0.461).
 
 ## 5. Autonomous agents & systems
 *Automation you can reason about.*

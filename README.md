@@ -51,15 +51,15 @@ habit of mind: find the structure, then make it formal.*
 ## Worth sixty seconds — the heroes
 
 Ordered by what a high-assurance reader scans for first: verification, then
-cryptography, then trustworthy ML, then autonomous-but-verified reasoning, then range.
+cryptography, then trustworthy ML, then autonomous research, then range.
 
 | # | Project | The claim |
 |---|---------|-----------|
 | 1 · **Formal verification** | [`lean-sabidussi`](https://github.com/RaggedR/lean-sabidussi) | My **PhD theorem** (Sabidussi representation + Lorimer, for symmetric graphs) **machine-checked in Lean 4** — 0 `sorry`; the headline theorems reduce to Lean's foundational axioms, verified by `#print axioms`. |
 | 2 · **Cryptography** | [`homomorphic-encryption`](https://github.com/RaggedR/homomorphic-encryption) | **Paillier homomorphic encryption + Schnorr zero-knowledge proofs**, built from scratch with no dependencies. |
-| 3 · **Trustworthy ML** | [`rsk-transformer`](https://github.com/RaggedR/rsk-transformer) · [`trust-boundaries`](https://github.com/RaggedR/trust-boundaries) | A transformer learns the inverse RSK correspondence to **100% exact match** (n=10); ablation isolates the responsible layer (100%→62%). Paired with a **formally-verified** per-agent trust algebra. |
-| 4 · **Autonomous, verified proof** | [`warnaar-loop-experiment`](https://github.com/RaggedR/warnaar-loop-experiment) | A loop of amnesiac Claude agents, with adversarial verification between iterations, **proved two open cases** (moduli 11 & 13) of Warnaar's A₂ Andrews–Gordon conjectures. |
-| 5 · **Range** | [`categorical-evolution`](https://github.com/lyra-claude/categorical-evolution) · [`embeddings`](https://github.com/RaggedR/embeddings) · [`smoke-flow`](https://github.com/RaggedR/smoke-flow) | A **published GECCO 2026** result (categorical composition of GAs); a math-retrieval embedder that **beats OpenAI** (MRR 0.816 vs 0.461); a real-time **GPU Navier–Stokes** smoke solver. |
+| 3 · **Trustworthy ML** | [`rsk-transformer`](https://github.com/RaggedR/rsk-transformer) · [`trust-boundaries`](https://github.com/RaggedR/trust-boundaries) | A transformer learns the inverse RSK correspondence to **100% exact match** (n=10) and 99.99% at n=15 — 0.00004% of the space seen, so algorithmic generalisation, not memorisation (a baseline MLP gets 3.07%). Paired with a **formally-verified** per-agent trust algebra. |
+| 4 · **Autonomous research** | [`warnaar-loop-experiment`](https://github.com/RaggedR/warnaar-loop-experiment) | A loop of amnesiac Claude agents — context cleared each round, notes the only memory — attacking an **open** positivity conjecture (Corteel–Dousse–Uncu / Warnaar). Across 27 agent instances it produced **genuine partial results** (a proof of the Q₁ case, a determinant identity for the Corteel–Welsh system, the Adjugate Monomial Theorem); the full conjecture remains open, and the repo says so. |
+| 5 · **Range** | [`categorical-evolution`](https://github.com/lyra-claude/categorical-evolution) · [`embeddings`](https://github.com/RaggedR/embeddings) · [`smoke-flow`](https://github.com/RaggedR/smoke-flow) | A **published GECCO 2026** result (categorical composition of GAs); a math-retrieval embedder that **beats OpenAI's `text-embedding-3-small`** (MRR 0.816 vs 0.461, reproducible benchmark); a real-time **GPU Navier–Stokes** smoke solver. |
 
 ---
 
@@ -114,17 +114,17 @@ match what the code actually shows.
 ### 3 · Trustworthy & interpretable machine learning
 | Repo | What it is |
 |------|------------|
-| [rsk-transformer](https://github.com/RaggedR/rsk-transformer) | 100% exact inverse RSK (n=10); ablation isolates the responsible layer. |
+| [rsk-transformer](https://github.com/RaggedR/rsk-transformer) | 100% exact inverse RSK (n=10), 99.99% at n=15; mechanistic-interpretability probes of how it computes. |
 | [octopus-streams](https://github.com/RaggedR/octopus-streams) | Mechanistic interpretability of transformers via RSK (Pythia-70m). |
 | [bijection-transformer-interpretability](https://github.com/RaggedR/bijection-transformer-interpretability) | SAE causal interventions; learning combinatorial bijections. |
 | [rsk-manifold-microscope](https://github.com/RaggedR/rsk-manifold-microscope) | The RSK transformer as a manifold microscope. |
-| [embeddings](https://github.com/RaggedR/embeddings) | Math-retrieval embedder beating OpenAI (MRR 0.816 vs 0.461). |
+| [embeddings](https://github.com/RaggedR/embeddings) | Math-retrieval embedder beating OpenAI `text-embedding-3-small` (MRR 0.816 vs 0.461). |
 | [clip-explorer](https://github.com/RaggedR/clip-explorer) | CLIP zero-shot scoring with interactive UMAP. |
 
 ### 4 · Autonomous agents & verified reasoning
 | Repo | What it is |
 |------|------------|
-| [warnaar-loop-experiment](https://github.com/RaggedR/warnaar-loop-experiment) | AI-agent loop that proved two open cases of Warnaar's conjecture (moduli 11, 13). |
+| [warnaar-loop-experiment](https://github.com/RaggedR/warnaar-loop-experiment) | A loop of amnesiac AI agents attacking an open positivity conjecture (Warnaar / Corteel–Dousse–Uncu); produced new partial results (Q₁ case, Adjugate Monomial Theorem). Full conjecture still open. |
 | [toy-agent-harness](https://github.com/RaggedR/toy-agent-harness) | A minimal autonomous agent harness — essay + working code. |
 | [orchestration](https://github.com/RaggedR/orchestration) | LLM topology-diversity experiments; a sign-flip result via contravariant Kan extensions. |
 | [mathematical-systems](https://github.com/RaggedR/mathematical-systems) | Why communication topology, not the fitness landscape, governs multi-agent diversity. |
@@ -211,8 +211,11 @@ match what the code actually shows.
 
 ---
 
-*PhD in mathematics (symmetric graphs and Hecke algebras). Trained models
-(`math-embed`, `torah-embed`, `rsk-transformer`) are published as HuggingFace model
-cards. **Every headline result is verifiable** — the [Lean index](lean.md) tells you
+*PhD in mathematics (symmetric graphs and Hecke algebras). Trained models are published
+as HuggingFace model cards:
+[math-embed](https://huggingface.co/RobBobin/math-embed) (math retrieval, MRR 0.816),
+[torah-embed](https://huggingface.co/RobBobin/torah-embed) (Talmud retrieval),
+[rsk-transformer](https://huggingface.co/RobBobin/rsk-transformer) (inverse RSK, 100%
+exact). **Every headline result is verifiable** — the [Lean index](lean.md) tells you
 exactly what is machine-checked and what is merely stated, and the
 [expository index](expository.md) is the prose behind it.*
