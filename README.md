@@ -80,6 +80,8 @@ And two program narratives — how the pieces fit together, not just what they a
   theorem (`lean-sabidussi`) → a local Mathlib development.
 - **[The container-theory program →](containers.md)** — a Lean-verified comonad spine
   (`macbeth-seed`, `social-network`) → a dozen applied instances.
+- **[Live demos →](demos.md)** — the browser-runnable pieces (GPU physics, generative
+  geometry, interactive math), one click each.
 
 ---
 
@@ -168,12 +170,16 @@ match what the code actually shows.
 | [evolve-evolution-strategy](https://github.com/lyra-claude/evolve-evolution-strategy) | Meta-evolution of migration graphs on deceptive landscapes. |
 | [Topology-experiments](https://github.com/lyra-claude/Topology-experiments) | Spectral analysis of migration topologies for island-model GAs (Haskell). |
 
-### 10 · GPU & creative coding
+### 10 · GPU & creative coding — all live, see the [demos index](demos.md)
 | Repo | What it is |
 |------|------------|
-| [smoke-flow](https://github.com/RaggedR/smoke-flow) | Real-time GPU smoke: laminar→turbulent via Navier–Stokes (live demo). |
-| [fire](https://github.com/RaggedR/fire) · [dancing](https://github.com/RaggedR/dancing) · [kaleidescope](https://github.com/RaggedR/kaleidescope) · [hexstar](https://github.com/RaggedR/hexstar) · [dmt](https://github.com/RaggedR/dmt) · [screen-saver](https://github.com/RaggedR/screen-saver) · [just-woke-up](https://github.com/RaggedR/just-woke-up) | Generative and music-reactive visual demos (live Pages sites). |
-| [sturmian-monster](https://github.com/RaggedR/sturmian-monster) | Visualizing Sturmian words and continued-fraction structure. |
+| [smoke-flow](https://github.com/RaggedR/smoke-flow) | Real-time GPU smoke: laminar→turbulent via Navier–Stokes ([live](https://raggedr.github.io/smoke-flow/)). |
+| [fire](https://github.com/RaggedR/fire) | Real-time browser fire: buoyant Navier–Stokes + vorticity + combustion ([live](https://raggedr.github.io/fire/)). |
+| [reaction-diffusion-screensaver](https://github.com/RaggedR/reaction-diffusion-screensaver) | Music-reactive Gray–Scott reaction–diffusion ([live](https://raggedr.github.io/reaction-diffusion-screensaver/)). |
+| [belt-trick](https://github.com/RaggedR/belt-trick) | The Dirac belt trick in 3D — why spinors need 720° (SU(2), Three.js) ([live](https://raggedr.github.io/belt-trick/)). |
+| [stomachion](https://github.com/RaggedR/stomachion) | Archimedes' Stomachion — interactive exact-cover puzzle solver ([live](https://raggedr.github.io/stomachion/)). |
+| [dancing](https://github.com/RaggedR/dancing) · [kaleidescope](https://github.com/RaggedR/kaleidescope) · [hexstar](https://github.com/RaggedR/hexstar) · [dmt](https://github.com/RaggedR/dmt) · [screen-saver](https://github.com/RaggedR/screen-saver) | More generative / geometric demos — all live (see the [demos index](demos.md)). |
+| [sturmian-monster](https://github.com/RaggedR/sturmian-monster) | Sturmian words and continued-fraction structure (Haskell). |
 
 ### 11 · Expository writing & essays — see the [expository index](expository.md)
 | Repo | What it is |
